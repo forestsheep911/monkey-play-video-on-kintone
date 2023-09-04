@@ -22,6 +22,7 @@ fs.writeFile(path.join(outputPath, monkeyHeader), getBanner(devBanner), () => {}
 
 module.exports = () => {
   baseOptions.output.path = outputPath
+  baseOptions.output.publicPath = '/'
   baseOptions.output.filename = `${devBanner.name}.script.js`
   baseOptions.plugins.push(
     new webpack.BannerPlugin({
@@ -55,6 +56,9 @@ module.exports = () => {
     watchFiles: ['src/**/*', 'public/**/*'],
   }
   baseOptions.mode = 'development'
+  baseOptions.externals = {
+    plyr: 'Plyr',
+  }
 
   return baseOptions
 }

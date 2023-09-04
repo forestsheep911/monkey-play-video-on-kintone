@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    // "types": ["vidstack/globals"],
     // "jsx": "preserve",
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
@@ -101,5 +102,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": false /* Skip type checking all .d.ts files. */
   },
-  "include": ["src"]
+  "include": ["src"],
+  "files": ["node_modules/plyr/src/js/plyr.d.ts", "./node_modules/@kintone/dts-gen/kintone.d.ts"]
 }

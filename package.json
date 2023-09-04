@@ -1,8 +1,8 @@
 {
-  "name": "monkey-xxx-xxx",
+  "name": "monkey-play-video-on-kintone",
   "version": "0.0.1",
   "description": "write description here",
-  "main": "./main.js",
+  "main": "./src/index.ts",
   "scripts": {
     "start": "webpack serve --config ./config/webpack.dev.js",
     "dev": "webpack --watch --config ./config/webpack.dev.js",
@@ -12,18 +12,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourname/your-app.git"
+    "url": "git+https://github.com/orestsheep911/monkey-play-video-on-kintone"
   },
   "keywords": [
     "TamperMonkey",
-    "TypeScript"
+    "TypeScript",
+    "kintone",
+    "video",
+    "Plyr"
   ],
-  "author": "you",
+  "author": "2water",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourname/your-app/issues"
+    "url": "https://github.com/forestsheep911/monkey-play-video-on-kintone/issues"
   },
-  "homepage": "https://github.com/yourname/your-app",
+  "homepage": "https://github.com/forestsheep911/monkey-play-video-on-kintone",
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
@@ -47,5 +50,9 @@
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@kintone/dts-gen": "^7.0.4",
+    "plyr": "^3.7.8",
+    "vidstack": "^0.6.13"
+  }
 }

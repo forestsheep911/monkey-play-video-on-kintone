@@ -7,6 +7,7 @@ module.exports = {
   grant: ['GM_getValue', 'GM_setValue', 'GM_addValueChangeListener', 'GM_getResourceText', 'GM_addStyle'],
   require: [
     'https://cdn.plyr.io/3.7.8/plyr.js',
+    'https://cdn.jsdelivr.net/npm/sweetalert2@11',
     `file://${resolve(__dirname, '../dist/dev').replaceAll('\\', '/')}/${pj.name}.script.js`,
   ],
 }

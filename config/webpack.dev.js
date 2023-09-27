@@ -56,9 +56,7 @@ module.exports = () => {
     watchFiles: ['src/**/*', 'public/**/*'],
   }
   baseOptions.mode = 'development'
-  baseOptions.externals = {
-    plyr: 'Plyr',
-  }
+  // baseOptions.externals = {}
 
   return baseOptions
 }

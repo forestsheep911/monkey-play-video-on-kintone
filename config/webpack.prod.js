@@ -17,7 +17,10 @@ module.exports = () => {
     }),
   )
   baseOptions.mode = 'production'
-  // baseOptions.externals = {}
+  baseOptions.externals = {
+    sweetalert2: 'Swal',
+    plyr: 'Plyr',
+  }
 
   return baseOptions
 }
